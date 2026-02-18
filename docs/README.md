@@ -1,28 +1,40 @@
-# GPTI Documentation Index
+# 🎯 GPTI Documentation Index
 
-Use this index to locate the latest docs after cleanup.
+**Latest Status**: 🟢 **PRODUCTION READY** (Feb 18, 2026)
 
-## Start here
-- audits/IMPLEMENTATION_GUIDE.md
-- audits/COMPREHENSIVE_AUDIT.md
-- testing/QUICK_TEST_GUIDE.txt
-- data-flow/DATA_FLOW_SUMMARY.md
-- deployment/DEPLOYMENT_CHECKLIST.md
-- DB_ADDENDUM.md
-- ERRATA.md
+## 📌 START HERE (Quick Links)
 
-## Base de donnees canonique
-- Canonical DB name: gpti_data
-- If you see gpti_db, gpti_bot, or gpti_sanctions in older docs, treat them as gpti_data.
+| Document | Purpose | Read Time |
+|----------|---------|-----------|
+| [**COMPLETE_AUDIT_2026-02-18.md**](COMPLETE_AUDIT_2026-02-18.md) | **✨ NEW - Unified, Complete Audit** | 15 min |
+| [QUICKSTART.md](QUICKSTART.md) | 5-minute deployment guide | 5 min |
+| [DEPLOYMENT_PLAN.md](DEPLOYMENT_PLAN.md) | Step-by-step procedures | 10 min |
+| [WEB_SEARCH_SERVICE.md](WEB_SEARCH_SERVICE.md) | Search engine architecture | 8 min |
+| [COMPLETION_SUMMARY.md](COMPLETION_SUMMARY.md) | Project delivery summary | 10 min |
 
-## Sections
-- audits/ (audit findings, implementation guidance)
-- data-flow/ (data flow diagrams, verification, enrichment)
-- testing/ (quick tests and test reports)
-- deployment/ (infra, VPS, credentials, slack)
-- visuals/ (UI changes and navigation summaries)
-- reports/ (phase progress notes)
-- archive/ (original start-here snapshots)
+## 📊 REFERENCE SECTIONS
+
+- **audits/** (old audit findings - see COMPLETE_AUDIT for unified version)
+- **data-flow/** (data flow diagrams and verification)
+- **testing/** (quick tests and test reports)
+- **deployment/** (infra, VPS, credentials setup)
+- **visuals/** (UI changes and navigation)
+- **reports/** (phase progress notes)
+- **archive/** (original snapshots - preserved for reference)
+
+## 🔧 DEPLOYMENT SCRIPTS
+
+Located in `/opt/gpti/`:
+- `deploy-staging.sh` - Deploy to staging environment
+- `verify-staging.sh` - Run comprehensive tests
+- `fix-issues.sh` - Fix remaining issues
+- `cleanup.sh` - Intelligent disk cleanup
+- `health-check-staging.sh` - Quick health check
+
+## 📁 DATABASE
+
+**Canonical DB name:** `gpti_data`  
+(If you see gpti_db, gpti_bot, or gpti_sanctions in older docs, they mean gpti_data)
 
 ## App-specific docs
 - gpti-site/docs/
