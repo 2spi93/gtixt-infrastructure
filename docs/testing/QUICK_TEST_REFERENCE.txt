@@ -1,0 +1,326 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                    GPTI DATA FLOW - QUICK TEST REFERENCE                 ║
+║                                                                          ║
+║                        Testing Framework Ready ✅                        ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+🎯 WHAT WAS CREATED:
+═══════════════════════════════════════════════════════════════════════════
+
+✅ Test Suite 1: Architecture Verification (Static - No Server Needed)
+   File: /opt/gpti/gpti-site/tests/run-integration-tests.sh
+   Run:  bash tests/run-integration-tests.sh
+   Time: ~10 seconds
+
+✅ Test Suite 2: E2E Runtime Tests (With Server Running)
+   File: /opt/gpti/gpti-site/tests/e2e-data-flow.sh
+   Run:  bash tests/e2e-data-flow.sh
+   Time: ~30 seconds
+
+✅ Test Suite 3: TypeScript Test Suite (Programmatic)
+   File: /opt/gpti/gpti-site/tests/data-flow.test.ts
+   Run:  npm run test:data-flow
+   Time: ~20 seconds
+
+✅ Test Suite 4: Interactive Browser Debugger
+   File: /opt/gpti/gpti-site/pages/debug/data-flow.tsx
+   Run:  http://localhost:3000/debug/data-flow
+   Time: Real-time
+
+✅ Documentation:
+   - /opt/gpti/DATA_FLOW_TESTING_GUIDE.md (Complete guide)
+   - /opt/gpti/DATA_FLOW_SUMMARY.md (This summary)
+   - /opt/gpti/FINAL_DATA_FLOW_REPORT_*.md (Generated reports)
+
+
+═══════════════════════════════════════════════════════════════════════════
+🚀 QUICK START GUIDE
+═══════════════════════════════════════════════════════════════════════════
+
+METHOD 1: Verify Structure (Fastest - No Server Needed)
+──────────────────────────────────────────────────────────────────────────
+$ cd /opt/gpti/gpti-site
+$ bash tests/run-integration-tests.sh
+
+Expected output:
+  ✅ Seed data: 100 firms found
+  ✅ API Routes: 9/9 routes found
+  ✅ Frontend Pages: 5/5 pages found
+  ✅ Data Integration: API calls found in pages
+  ✅ Validation: 18 validation files found
+
+Results: Test report saved to /opt/gpti/TEST_REPORT_*.md
+
+
+METHOD 2: Full E2E Runtime Test (Requires Running Server)
+──────────────────────────────────────────────────────────────────────────
+Terminal 1 - Start server:
+  $ cd /opt/gpti/gpti-site
+  $ npm run dev
+  [Server running on http://localhost:3000]
+
+Terminal 2 - Run tests:
+  $ cd /opt/gpti/gpti-site
+  $ bash tests/e2e-data-flow.sh
+
+Expected output:
+  ✅ Testing Health endpoint ... OK (200)
+  ✅ Testing Firms endpoint ... OK (200)
+  ✅ Retrieved 100 firms from seed data
+  ✅ Testing Agent status endpoint ... OK (200)
+  ✅ Retrieved status for 9 agents
+  [More endpoints tested...]
+
+
+METHOD 3: Interactive Browser Testing (Most Visual)
+──────────────────────────────────────────────────────────────────────────
+Step 1: Start server
+  $ cd /opt/gpti/gpti-site
+  $ npm run dev
+
+Step 2: Open browser
+  URL: http://localhost:3000/debug/data-flow
+
+Step 3: Click "Run All Tests" button
+
+Step 4: Select each endpoint and inspect responses
+
+Results: Real-time JSON responses visible in UI
+
+
+METHOD 4: Manual API Testing
+──────────────────────────────────────────────────────────────────────────
+Test health:
+  $ curl http://localhost:3000/api/health | jq .
+
+Test firms:
+  $ curl http://localhost:3000/api/firms?limit=5 | jq .
+
+Test agent status:
+  $ curl http://localhost:3000/api/agents/status | jq .
+
+Test evidence:
+  $ curl http://localhost:3000/api/evidence | jq .
+
+
+═══════════════════════════════════════════════════════════════════════════
+📊 WHAT GETS TESTED
+═══════════════════════════════════════════════════════════════════════════
+
+DATA SOURCES:
+  ✅ Seed data file (100 firms)
+  ✅ Seed data format (JSON valid)
+
+API ENDPOINTS (9 total):
+  ✅ /api/health                - System status
+  ✅ /api/firms                 - Firm list (100)
+  ✅ /api/firm                  - Single firm details
+  ✅ /api/firm-history          - Historical data
+  ✅ /api/agents/status         - Agent metrics
+  ✅ /api/evidence              - Evidence collection
+  ✅ /api/events                - Event stream
+  ✅ /api/validation/metrics    - Test results
+  ✅ /api/snapshots             - Data snapshots
+
+FRONTEND PAGES (5 total):
+  ✅ /agents-dashboard          - Agent metrics display
+  ✅ /phase2                    - Validation status
+  ✅ /firms                     - Firm listing
+  ✅ /firm/[id]                 - Firm details
+  ✅ /data                       - Data explorer
+
+AGENTS (7 total):
+  ✅ RVI  - Registry Verification
+  ✅ SSS  - Sanctions Screening
+  ✅ IIP  - Identity Integrity
+  ✅ MIS  - Media Intelligence
+  ✅ IRS  - Regulatory Status
+  ✅ FCA  - Compliance Audit
+  ✅ FRP  - Financial Risk
+
+DATA INTEGRATION:
+  ✅ Pages fetch from APIs
+  ✅ APIs return correct format
+  ✅ Response times acceptable
+  ✅ Error handling present
+
+
+═══════════════════════════════════════════════════════════════════════════
+📁 FILE REFERENCE
+═══════════════════════════════════════════════════════════════════════════
+
+TEST SCRIPTS:
+  /opt/gpti/gpti-site/tests/run-integration-tests.sh
+  /opt/gpti/gpti-site/tests/e2e-data-flow.sh
+  /opt/gpti/gpti-site/tests/generate-final-report.sh
+  /opt/gpti/gpti-site/tests/data-flow.test.ts
+
+TEST PAGES:
+  /opt/gpti/gpti-site/pages/debug/data-flow.tsx
+  /opt/gpti/gpti-site/pages/api/verify/page-integration.ts
+
+DOCUMENTATION:
+  /opt/gpti/DATA_FLOW_TESTING_GUIDE.md
+  /opt/gpti/DATA_FLOW_SUMMARY.md
+  /opt/gpti/QUICK_TEST_REFERENCE.txt (this file)
+  /opt/gpti/FINAL_DATA_FLOW_REPORT_*.md (generated)
+
+SEED DATA:
+  /opt/gpti/gpti-data-bot/data/seeds/seed.json (100 firms)
+
+API ROUTES:
+  /opt/gpti/gpti-site/pages/api/health.ts
+  /opt/gpti/gpti-site/pages/api/firms.ts
+  /opt/gpti/gpti-site/pages/api/firm.ts
+  /opt/gpti/gpti-site/pages/api/firm-history.ts
+  /opt/gpti/gpti-site/pages/api/agents/status.ts
+  /opt/gpti/gpti-site/pages/api/evidence.ts
+  /opt/gpti/gpti-site/pages/api/events.ts
+  /opt/gpti/gpti-site/pages/api/validation/metrics.ts
+  /opt/gpti/gpti-site/pages/api/snapshots.ts
+
+FRONTEND PAGES:
+  /opt/gpti/gpti-site/pages/agents-dashboard.tsx
+  /opt/gpti/gpti-site/pages/phase2.tsx
+  /opt/gpti/gpti-site/pages/firm.tsx
+  /opt/gpti/gpti-site/pages/firm/[id].tsx
+  /opt/gpti/gpti-site/pages/data.tsx
+
+
+═══════════════════════════════════════════════════════════════════════════
+✅ VERIFICATION CHECKLIST
+═══════════════════════════════════════════════════════════════════════════
+
+Before Running Tests:
+  ☑ Review DATA_FLOW_TESTING_GUIDE.md
+  ☑ Understand data flow architecture
+
+Static Tests (No Server):
+  ☑ Run: bash tests/run-integration-tests.sh
+  ☑ Verify: All components exist (100% pass)
+
+Runtime Tests (With Server):
+  ☑ Start server: npm run dev
+  ☑ Run: bash tests/e2e-data-flow.sh
+  ☑ Check: All endpoints respond (200)
+
+Browser Tests:
+  ☑ Open: http://localhost:3000/debug/data-flow
+  ☑ Click: "Run All Tests"
+  ☑ Verify: All tests pass
+
+Manual Inspection:
+  ☑ Check DevTools console (F12)
+  ☑ Check Network tab for API calls
+  ☑ Verify data displays on pages
+
+Report Review:
+  ☑ Check: /opt/gpti/TEST_REPORT_*.md
+  ☑ Review: Timing data
+  ☑ Verify: All tests passed
+
+
+═══════════════════════════════════════════════════════════════════════════
+🎯 EXPECTED RESULTS
+═══════════════════════════════════════════════════════════════════════════
+
+✅ Architecture Test Results:
+   [TEST 1] Checking seed data...
+   ✅ Seed data found (100 firms)
+   
+   [TEST 2] Checking database connectivity...
+   ⚠️  Database connection test skipped
+   
+   [TEST 3] Checking API route files...
+   ✅ /api/health.ts
+   ✅ /api/firms.ts
+   [... 7 more endpoints ...]
+   Found 9/9 API routes
+   
+   [TEST 4] Checking frontend pages consuming data...
+   ✅ pages/agents-dashboard.tsx
+   ✅ pages/phase2.tsx
+   [... 3 more pages ...]
+   Found 5/5 consumer pages
+   
+   [TEST 5] Verifying data integration in pages...
+   ✅ Data Integration: API calls found in pages
+   
+   [TEST 6] Checking data validation patterns...
+   ✅ Validation: 18 validation files found
+
+✅ E2E Test Results:
+   Testing Health endpoint ... ✅ OK (200)
+   Testing Firms endpoint ... ✅ OK (200)
+   Retrieved 100 firms from seed data
+   Testing Agent status endpoint ... ✅ OK (200)
+  Retrieved status for 9 agents
+   Testing Evidence endpoint ... ✅ OK (200)
+   Testing Validation metrics endpoint ... ✅ OK (200)
+   Testing Events endpoint ... ✅ OK (200)
+   
+   Testing /agents-dashboard page ... ✅ OK (200)
+   Testing /phase2 page ... ✅ OK (200)
+   Testing /firms page ... ✅ OK (200)
+   Testing /data page ... ✅ OK (200)
+   
+   ✅ All critical paths operational
+
+
+═══════════════════════════════════════════════════════════════════════════
+🔧 TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════
+
+Issue: "API not responding" or 503 errors
+Fix:   Start backend services
+       $ docker-compose up -d postgres minio redis
+       $ npm run populate-data
+
+Issue: "Seed data not found"
+Fix:   Check if file exists
+       $ ls -la /opt/gpti/gpti-data-bot/data/seeds/seed.json
+
+Issue: CORS errors in browser
+Fix:   Ensure API_URL is correct in .env.local
+       $ grep API_URL .env.local
+
+Issue: Pages show blank/no data
+Fix:   Check browser console for errors (F12)
+       Check Network tab for failed API calls
+
+Issue: "Cannot find test file"
+Fix:   Ensure you're in correct directory
+       $ cd /opt/gpti/gpti-site
+       $ bash tests/run-integration-tests.sh
+
+═══════════════════════════════════════════════════════════════════════════
+📚 ADDITIONAL RESOURCES
+═══════════════════════════════════════════════════════════════════════════
+
+Complete Testing Guide:
+  cat /opt/gpti/DATA_FLOW_TESTING_GUIDE.md
+
+Generated Reports:
+  ls -la /opt/gpti/FINAL_DATA_FLOW_REPORT_*.md
+  cat /opt/gpti/TEST_REPORT_*.md
+
+View All Test Files:
+  ls -la /opt/gpti/gpti-site/tests/
+
+Debug in Browser:
+  npm run dev
+  Open: http://localhost:3000/debug/data-flow
+
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ SUMMARY: Data flow testing framework is complete and ready!
+
+   → Run tests: bash tests/run-integration-tests.sh
+   → Read guide: cat /opt/gpti/DATA_FLOW_TESTING_GUIDE.md
+   → Debug live: http://localhost:3000/debug/data-flow
+
+Generated: 2026-02-05
+Status: ✅ READY FOR TESTING
+
+═══════════════════════════════════════════════════════════════════════════

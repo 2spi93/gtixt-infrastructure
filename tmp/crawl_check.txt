@@ -1,0 +1,1 @@
+udo docker exec -i gpti-data-bot python -

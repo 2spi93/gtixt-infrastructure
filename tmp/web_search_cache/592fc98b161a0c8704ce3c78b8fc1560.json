@@ -1,0 +1,24 @@
+{
+  "query": "prop trading",
+  "timestamp": "2026-02-18T01:56:35.968141",
+  "results": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Proprietary_trading",
+      "title": "Proprietary trading",
+      "snippet": "Proprietary trading occurs when a trader trades stocks, bonds, currencies, commodities, their derivatives, or other financial instruments with the firm's own money to make a profit for itself. Proprie",
+      "source": "duckduckgo",
+      "relevance": 0.7,
+      "published_date": null,
+      "rank_position": 1
+    },
+    {
+      "url": "https://duckduckgo.com/Flow_trading",
+      "title": "Flow trading - In finance, flow trading occurs when a firm trades stocks, bonds, currencies, commodi",
+      "snippet": "Flow trading - In finance, flow trading occurs when a firm trades stocks, bonds, currencies, commodities, their derivatives, or other financial instruments, with funds from a client, rather than its o",
+      "source": "duckduckgo",
+      "relevance": 0.6,
+      "published_date": null,
+      "rank_position": 2
+    }
+  ]
+}

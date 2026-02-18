@@ -1,0 +1,214 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                    FLUX COMPLET DE DONNÉES - ARCHITECTURE GPTI                 ║
+║                                2026-02-05                                      ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+ÉTAPE 1: COLLECTION DE DONNÉES (Agents Python)
+═════════════════════════════════════════════════════════════════════════════════
+
+                         ┌─────────────────────────────┐
+                         │   15 AGENTS PYTHON ACTIFS   │
+                         └─────────────────────────────┘
+                                     │
+                ┌────────────────────┼────────────────────┐
+                │                    │                    │
+         ┌──────▼──────┐    ┌──────▼──────┐    ┌──────▼──────┐
+         │ Daily Agents│    │Weekly Agent │    │Monthly Agent│
+         │  (RVI, REM, │    │    (IIP)    │    │    (SSS)    │
+         │ IRS, FRP)   │    │             │    │             │
+         └──────┬──────┘    └──────┬──────┘    └──────┬──────┘
+                │                    │                │
+                ├───────────────────┬┼────────────────┤
+                │                   │                 │
+                └───────────┬───────▼────────┬────────┘
+                            │                │
+                    ┌───────▼────────────────▼──────┐
+                    │    PostgreSQL + MinIO         │
+                    │    (Evidence + Audit Trail)   │
+                    └───────────────┬────────────────┘
+                                    │
+                                    ▼
+
+ÉTAPE 2: AGRÉGATION & GÉNÉRATION (Snapshot)
+═════════════════════════════════════════════════════════════════════════════════
+
+                        ┌──────────────────────┐
+                        │ Snapshot Generator   │
+                        │ (Monthly Flow)       │
+                        │                      │
+                        │ Input:               │
+                        │ - 15 agents data     │
+                        │ - PostgreSQL records │
+                        │ - Audit trail        │
+                        └──────────┬───────────┘
+                                   │
+                        ┌──────────▼──────────┐
+                        │  Score Auditor      │
+                        │  Validates all data │
+                        │  56 firmas + 27     │
+                        │  fields each        │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                    ┌──────────────────────────────┐
+                    │  test-snapshot.json (68.6KB) │
+                    │  • 56 firmas                 │
+                    │  • 27 champs par firma       │
+                    │  • 6 juridictions            │
+                    │  • 0 valeurs NULL            │
+                    └──────────┬───────────────────┘
+                               │
+                ┌──────────────┼──────────────┐
+                │              │              │
+         ┌──────▼────────┐ ┌──▼───────────┐ ┌▼────────────────┐
+         │ /data/        │ │ /public/     │ │ /out/           │
+         │ (Production)  │ │ (Static Web) │ │ (Build Output)  │
+         └──────┬────────┘ └──┬───────────┘ └┬────────────────┘
+                │              │              │
+                └──────────────┼──────────────┘
+                               │
+                               ▼
+
+ÉTAPE 3: DISTRIBUTION VIA APIs (Next.js)
+═════════════════════════════════════════════════════════════════════════════════
+
+                    ┌────────────────────────────────┐
+                    │    18 API ENDPOINTS ACTIFS     │
+                    └────────────────────────────────┘
+                                  │
+            ┌─────────────────────┼─────────────────────┐
+            │                     │                     │
+     ┌──────▼────────┐   ┌───────▼────────┐   ┌───────▼────────┐
+     │ /api/firms    │   │ /api/firm      │   │ /api/agents/*  │
+     │               │   │                │   │                │
+     │ GET all 56    │   │ GET one firm   │   │ GET agent      │
+     │ Returns:      │   │ Returns:       │   │ status/health  │
+     │ • name        │   │ • full detail  │   │                │
+     │ • score       │   │ • all 27 fields│   │ Returns:       │
+     │ • jurisdiction│   │ • history      │   │ • run status   │
+     │ • all metrics │   │                │   │ • evidence     │
+     └──────┬────────┘   └───────┬────────┘   └───────┬────────┘
+            │                    │                    │
+            └────────────────────┼────────────────────┘
+                                 │
+                    ┌────────────▼────────────┐
+                    │  Response JSON (cached) │
+                    │  Cache-Control enabled  │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+
+ÉTAPE 4: AFFICHAGE AUX PAGES (React)
+═════════════════════════════════════════════════════════════════════════════════
+
+            ┌────────────────────────────────────────┐
+            │       28 PAGES REACT DISPONIBLES       │
+            └────────────────────────────────────────┘
+                                 │
+        ┌────────────────────────┼────────────────────┐
+        │                        │                    │
+   ┌────▼─────────┐   ┌─────────▼─────────┐   ┌─────▼──────────┐
+   │ /rankings    │   │ /firm/[id]        │   │ /data          │
+   │              │   │                   │   │                │
+   │ fetch(       │   │ fetch(            │   │ fetch(         │
+   │ /api/firms   │   │ /api/firm?id=X    │   │ /api/firms     │
+   │ ?limit=200   │   │ )                 │   │ )              │
+   │ )            │   │                   │   │                │
+   │              │   │ Displays:         │   │ Raw data view  │
+   │ Displays:    │   │ • Full details    │   │ JSON explorer  │
+   │ • Table      │   │ • History         │   │                │
+   │   56 rows    │   │ • Scores          │   │ Editable       │
+   │ • Sort by    │   │ • Validations     │   │ (dev mode)     │
+   │   score      │   │ • Audit trail     │   │                │
+   │ • Filter by  │   │                   │   │                │
+   │   jurisdiction   │ Related:          │   │                │
+   │ • Click → /firm/[id]  • /rankings    │   │                │
+   │              │   │ • /data           │   │                │
+   │              │   │ • /agents-dash    │   │                │
+   └────┬─────────┘   └──────┬────────────┘   └────┬───────────┘
+        │                    │                     │
+        └────────────────────┼─────────────────────┘
+                             │
+                    ┌────────▼────────┐
+                    │  USER SEES      │
+                    │  • 56 firmas    │
+                    │  • 27 champs    │
+                    │  • Real-time    │
+                    │    data         │
+                    │  • Navigation   │
+                    │    fluide       │
+                    └─────────────────┘
+
+ÉTAPE 5: AUDIT & MONITORING (Continu)
+═════════════════════════════════════════════════════════════════════════════════
+
+   ┌──────────────────────┐      ┌──────────────────────┐
+   │ Validation Flow      │      │ Health Checks        │
+   │                      │      │                      │
+   │ • Vérifie intégrité  │      │ • /api/health        │
+   │ • 56 firmas présents │      │ • /api/agents/health │
+   │ • 27 champs remplis  │      │ • Database status    │
+   │ • 0 NULL             │      │ • MinIO status       │
+   │ • Scores valides     │      │ • Prefect status     │
+   └──────────┬───────────┘      └──────────┬───────────┘
+              │                             │
+              └──────────────┬──────────────┘
+                             │
+                    ┌────────▼────────┐
+                    │ History Agent   │
+                    │                 │
+                    │ • Trace changes │
+                    │ • Store history │
+                    │ • Audit trail   │
+                    │ • Versioning    │
+                    └─────────────────┘
+
+═════════════════════════════════════════════════════════════════════════════════
+
+DONNÉES CLÉS TRANSPORTÉES BOUT-À-BOUT:
+
+Input (Agents):              Processing:             Output (Pages):
+─────────────────────        ──────────────          ────────────────
+Preuves brutes              Validation             56 Firmas visibles
+Events régul.               Agrégation             27 Champs affichés
+Scores calc.                Scoring                Tri/Filtrage
+Intégrité                   JSON Gen.              Navigation
+Met en cache                Sync multi-dest        Real-time
+
+═════════════════════════════════════════════════════════════════════════════════
+
+SYNCHRONISATION SNAPSHOT:
+
+                    /data/test-snapshot.json (Source)
+                              │
+                              ├─────────────────────────┐
+                              │                         │
+                    ┌─────────▼──────────┐   ┌──────────▼──────────┐
+                    │ /public/           │   │ /out/              │
+                    │ test-snapshot.json │   │ test-snapshot.json │
+                    │                    │   │                    │
+                    │ Static Web Files   │   │ Build Output       │
+                    │ (Production Build) │   │ (Next.js Export)   │
+                    └────────────────────┘   └────────────────────┘
+
+ORCHESTRATION PREFECT:
+
+    Daily      →  RVI, REM, IRS, FRP → PostgreSQL → Validation
+      ↓
+    Weekly (if Mon) → IIP, RVI → PostgreSQL
+      ↓
+    Monthly (if 1st) → SSS → PostgreSQL
+      ↓
+    Always → Score Auditor → Update Snapshot
+      ↓
+    Sync to /data/ /public/ /out/
+      ↓
+    APIs serve → Pages display → Users see real-time data
+
+═════════════════════════════════════════════════════════════════════════════════
+
+STATUS: ✅ COMPLET ET SYNCHRONISÉ
+
+Tous les éléments fonctionnent ensemble pour créer un flux continu:
+Agents → DB → Snapshot → APIs → Pages → Users
+

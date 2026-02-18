@@ -1,0 +1,24 @@
+{
+  "query": "TopStep",
+  "timestamp": "2026-02-18T01:56:35.061585",
+  "results": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Topstep",
+      "title": "Topstep",
+      "snippet": "Topstep is a financial technology company headquartered in Chicago, Illinois and founded by Michael Patak. It specializes in evaluating the performance of day traders through real-time simulated tradi",
+      "source": "duckduckgo",
+      "relevance": 0.95,
+      "published_date": null,
+      "rank_position": 1
+    },
+    {
+      "url": "https://duckduckgo.com/c/Futures_markets",
+      "title": "Futures markets",
+      "snippet": "Futures markets",
+      "source": "duckduckgo",
+      "relevance": 0.35,
+      "published_date": null,
+      "rank_position": 2
+    }
+  ]
+}

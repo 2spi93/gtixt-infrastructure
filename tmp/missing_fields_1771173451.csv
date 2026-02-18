@@ -1,0 +1,137 @@
+firm_id,name,website_root,missing_fields,payout_frequency,max_drawdown_rule,daily_drawdown_rule,jurisdiction_tier
+novaproptraderscom,Nova Prop Traders,https://novaproptraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+fundedtradingpluscom,Funded Trading Plus,https://fundedtradingplus.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+primepropcapitalcom,Prime Prop Capital,https://primepropcapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+the5erscom,The5ers,https://the5ers.com,"max_drawdown_rule,daily_drawdown_rule",daily,,,Tier 2
+mavensecuritiescom,Maven Securities,https://mavensecurities.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+citytradersimperiumcom,City Traders Imperium,https://citytradersimperium.com,"max_drawdown_rule,daily_drawdown_rule",on-demand,,,Tier 2
+fundedacademycom,Funded Academy,https://fundedacademy.com,max_drawdown_rule,daily,,5,Tier 2
+blueguardiancom,Blue Guardian,https://blueguardian.com,"max_drawdown_rule,daily_drawdown_rule",daily,,,Tier 2
+fundedelitecom,Funded Elite,https://fundedelite.com,"max_drawdown_rule,daily_drawdown_rule",on-demand,,,Tier 2
+alphacapitalgroupuk,Alpha Capital Group,https://alphacapitalgroup.uk,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+brightfundedcom,BrightFunded,https://brightfunded.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+apextraderfundingcom,Apex Trader Funding,https://apextraderfunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+fundedfuturesnetworkcom,Funded Futures Network,https://fundedfuturesnetwork.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+fidelcrestcom,Fidelcrest,https://fidelcrest.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+surgetradercom,SurgeTrader,https://surgetrader.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+thefundedtradercomau,The Funded Trader Australia,https://thefundedtrader.com.au,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+luxtradingfirmcom,Lux Trading Firm,https://luxtradingfirm.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+theproptradingcom,The Prop Trading,https://theproptrading.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+alphathefundedcom,Alpha The Funded,https://alphathefunded.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+financelabfundingcom,Financelab Funding,https://financelabfunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+fundedtradersocietycom,The Funded Trader Society,https://fundedtradersociety.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+luxalgofundedcom,LuxAlgo Funded,https://luxalgofunded.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+propfirmhubcom,Prop Firm Hub,https://propfirmhub.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+propfirmmatchcom,Prop Firm Match,https://propfirmmatch.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+fundedtradingglobalcom,Funded Trading Global,https://fundedtradingglobal.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+tradingfloorfundedcom,The Trading Floor Funded,https://tradingfloorfunded.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+nextstepfundedcom,Next Step Funded,https://nextstepfunded.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+fundedempirecom,Funded Empire,https://fundedempire.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+propfirmedgecom,Prop Firm Edge,https://propfirmedge.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+fundedfuturesprocom,Funded Futures Pro,https://fundedfuturespro.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+propdeskcapitalcom,PropDesk Capital,https://propdeskcapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+quantproptradingcom,QuantProp Trading,https://quantproptrading.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+atlasfundedtraderscom,Atlas Funded Traders,https://atlasfundedtraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+vertexfundedcom,Vertex Funded,https://vertexfunded.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+summitpropfundingcom,Summit Prop Funding,https://summitpropfunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+pinnaclefundedtraderscom,Pinnacle Funded Traders,https://pinnaclefundedtraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+horizonpropfirmcom,Horizon Prop Firm,https://horizonpropfirm.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+zenithtradingfundedcom,Zenith Trading Funded,https://zenithtradingfunded.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+everestproptraderscom,Everest Prop Traders,https://everestproptraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+globefundedmarketscom,Globe Funded Markets,https://globefundedmarkets.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+astrafundedcapitalcom,Astra Funded Capital,https://astrafundedcapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+vectorpropfundingcom,Vector Prop Funding,https://vectorpropfunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+helixfundedtraderscom,Helix Funded Traders,https://helixfundedtraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+orbitproptradingcom,Orbit Prop Trading,https://orbitproptrading.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+magnetfundedfxcom,Magnet Funded FX,https://magnetfundedfx.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+neonpropcapitalcom,Neon Prop Capital,https://neonpropcapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+fundedengineercom,Funded Engineer,https://fundedengineer.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+pulsefundedtraderscom,Pulse Funded Traders,https://pulsefundedtraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+matrixfundedtradingcom,Matrix Funded Trading,https://matrixfundedtrading.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+corepropmarketscom,Core Prop Markets,https://corepropmarkets.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+ignitepropfundingcom,Ignite Prop Funding,https://ignitepropfunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+vertexfuturesfundingcom,Vertex Futures Funding,https://vertexfuturesfunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+summitfuturestradercom,Summit Futures Trader,https://summitfuturestrader.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+glacierfuturesfundingcom,Glacier Futures Funding,https://glacierfuturesfunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+quantumpropfxcom,Quantum Prop FX,https://quantumpropfx.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+aurorapropfuturescom,Aurora Prop Futures,https://aurorapropfutures.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+sigmafundedtraderscom,Sigma Funded Traders,https://sigmafundedtraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+deltapropcapitalcom,Delta Prop Capital,https://deltapropcapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+omegafundedmarketscom,Omega Funded Markets,https://omegafundedmarkets.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+vectorquantpropcom,Vector Quant Prop,https://vectorquantprop.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+heliosproptradingcom,Helios Prop Trading,https://heliosproptrading.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+orionfundedtraderscom,Orion Funded Traders,https://orionfundedtraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+atlasquanttradingcom,Atlas Quant Trading,https://atlasquanttrading.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+novafuturesnetworkcom,Nova Futures Network,https://novafuturesnetwork.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+pillarpropcapitalcom,Pillar Prop Capital,https://pillarpropcapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+crestfundedfxcom,Crest Funded FX,https://crestfundedfx.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+summitquantpropcom,Summit Quant Prop,https://summitquantprop.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+horizonfutureslabcom,Horizon Futures Lab,https://horizonfutureslab.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+zenithquantcapitalcom,Zenith Quant Capital,https://zenithquantcapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+everestfxfundingcom,Everest FX Funding,https://everestfxfunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+globequanttraderscom,Globe Quant Traders,https://globequanttraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+astrafuturesnetworkcom,Astra Futures Network,https://astrafuturesnetwork.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+vectorcryptopropcom,Vector Crypto Prop,https://vectorcryptoprop.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+helixdigitalassetscom,Helix Digital Assets,https://helixdigitalassets.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+orbitcryptofundingcom,Orbit Crypto Funding,https://orbitcryptofunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+magnetdigitalpropcom,Magnet Digital Prop,https://magnetdigitalprop.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+neoncryptotraderscom,Neon Crypto Traders,https://neoncryptotraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+corecryptocapitalcom,Core Crypto Capital,https://corecryptocapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+pulsedigitalfundingcom,Pulse Digital Funding,https://pulsedigitalfunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+ignitecryptolabcom,Ignite Crypto Lab,https://ignitecryptolab.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+matrixdigitalmarketscom,Matrix Digital Markets,https://matrixdigitalmarkets.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+summitdigitaltraderscom,Summit Digital Traders,https://summitdigitaltraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+glaciercryptofundingcom,Glacier Crypto Funding,https://glaciercryptofunding.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+auroradigitalpropcom,Aurora Digital Prop,https://auroradigitalprop.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+signalwavepropcom,SignalWave Prop,https://signalwaveprop.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+driftlinecapitalcom,DriftLine Capital,https://driftlinecapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+gammaproppartnerscom,Gamma Prop Partners,https://gammaproppartners.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+sigmaflowtradingcom,SigmaFlow Trading,https://sigmaflowtrading.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+quantbridgecapitalcom,QuantBridge Capital,https://quantbridgecapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+imccom,IMC Trading,https://imc.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+optivercom,Optiver,https://optiver.com,"max_drawdown_rule,daily_drawdown_rule",weekly,,,Tier 2
+flowtraderscom,Flow Traders,https://flowtraders.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+drwcom,DRW,https://drw.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+janestreetcom,Jane Street,https://janestreet.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+jumptradingcom,Jump Trading,https://jumptrading.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+hudsonrivertradingcom,Hudson River Trading,https://hudsonrivertrading.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+davinciderivativescom,Da Vinci Derivatives,https://davinciderivatives.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+akunacapitalcom,Akuna Capital,https://akunacapital.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+tower-researchcom,Tower Research Capital,https://tower-research.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 1
+citadelsecuritiescom,Citadel Securities,https://citadelsecurities.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+sigcom,Susquehanna International Group,https://sig.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+point72com,Point72 Cubist,https://point72.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+twosigmacom,Two Sigma,https://twosigma.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+schonfeldcom,Schonfeld Strategic Advisors,https://schonfeld.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+mlpcom,Millennium Management,https://mlp.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+thefundedtraderprogramcom,The Funded Trader,https://thefundedtraderprogram.com,max_drawdown_rule,daily,,3,Tier 2
+myforexfundscom,My Forex Funds,https://myforexfunds.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+blueberryfundedcom,Blueberry Funded,https://blueberryfunded.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+exoduspointcom,ExodusPoint Capital,https://exoduspoint.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+topstepcom,TopStep,https://www.topstep.com,"max_drawdown_rule,daily_drawdown_rule",daily,,,Tier 2
+tradedaycom,TradeDay,https://tradeday.com,"max_drawdown_rule,daily_drawdown_rule",monthly,,,Tier 2
+myfundedfuturescom,My Funded Futures,https://myfundedfutures.com,"max_drawdown_rule,daily_drawdown_rule",monthly,,,Tier 2
+finotivefundingcom,Finotive Funding,https://finotivefunding.com,"max_drawdown_rule,daily_drawdown_rule",on_demand,,,Tier 2
+fundednextcom,FundedNext,https://fundednext.com,"max_drawdown_rule,daily_drawdown_rule",daily,,,Tier 2
+oneuptradercom,OneUp Trader,https://www.oneuptrader.com,"max_drawdown_rule,daily_drawdown_rule",daily,,,Tier 2
+uprofittradercom,Uprofit Trader,https://uprofittrader.com,"max_drawdown_rule,daily_drawdown_rule",monthly,,,Tier 2
+goatfundedtradercom,Goat Funded Trader,https://goatfundedtrader.com,"max_drawdown_rule,daily_drawdown_rule",on_demand,,,Tier 2
+thetradingpitcom,The Trading Pit,https://thetradingpit.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+proptrustedcom,Prop Trusted,https://proptrusted.com,"max_drawdown_rule,daily_drawdown_rule",daily,,,Tier 2
+mentfundingcom,Ment Funding,https://mentfunding.com,"max_drawdown_rule,daily_drawdown_rule",daily,,,Tier 2
+toponetradercom,Top One Trader,https://toponetrader.com,"max_drawdown_rule,daily_drawdown_rule",daily,,,Tier 2
+e8marketscom,E8 Markets,https://e8markets.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+trueforexfundscom,True Forex Funds,https://trueforexfunds.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+smartproptradercom,Smart Prop Trader,https://smartproptrader.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+fundednationcom,Funded Nation,https://fundednation.com,max_drawdown_rule,daily,,3,Tier 2
+fundedtraderlabcom,Funded Trader Lab,https://fundedtraderlab.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+fxifycom,FXIFY,https://fxify.com,"max_drawdown_rule,daily_drawdown_rule",on_demand,,,Tier 2
+myfundedfxcom,MyFundedFX,https://myfundedfx.com,"max_drawdown_rule,daily_drawdown_rule",daily,,,Tier 2
+leelootradingcom,Leeloo Trading,https://leelootrading.com,"max_drawdown_rule,daily_drawdown_rule",weekly,,,Tier 2
+traderswithedgecom,Traders With Edge,https://traderswithedge.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+infinityforexfundscom,Infinity Forex Funds,https://infinityforexfunds.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+flowedgetradingcom,FlowEdge Trading,https://flowedgetrading.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+traderscentralcom,Traders Central,https://traderscentral.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+earn2tradecom,Earn2Trade,https://www.earn2trade.com,"max_drawdown_rule,daily_drawdown_rule",monthly,,,Tier 2
+fundedpeakscom,Funded Peaks,https://fundedpeaks.com,"payout_frequency,max_drawdown_rule,daily_drawdown_rule",,,,Tier 2
+takeprofittradercom,Take Profit Trader,https://takeprofittrader.com,"max_drawdown_rule,daily_drawdown_rule",daily,,,Tier 2

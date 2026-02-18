@@ -1,0 +1,1455 @@
+{
+  "summary": {
+    "processed": 20,
+    "ok_any": 8,
+    "firm_ok": 8,
+    "aggregator_ok": 0,
+    "bing_ok": 0,
+    "ok_ratio": 0.4,
+    "consecutive_fail": 2,
+    "strict_mode": false,
+    "strict_consecutive": 6
+  },
+  "details": [
+    {
+      "firm_id": "topstepcom",
+      "brand_name": "TopStep",
+      "website_root": "https://www.topstep.com",
+      "firm_ok": true,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.topstep.com/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 135151,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/topstepcom/",
+        "https://thetrustedprop.com/topstepcom-challenge-rules/",
+        "https://thetrustedprop.com/topstep/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/topstepcom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/topstepcom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9516,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/topstepcom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/topstepcom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9523,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/topstep/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/topstep",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9500,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "TopStep prop firm rules",
+        "TopStep prop firm pricing",
+        "TopStep prop firm payout",
+        "site:www.topstep.com TopStep rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "apextraderfundingcom",
+      "brand_name": "Apex Trader Funding",
+      "website_root": "https://apextraderfunding.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 403,
+        "final_url": "https://apextraderfunding.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 2236,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/apextraderfundingcom/",
+        "https://thetrustedprop.com/apextraderfundingcom-challenge-rules/",
+        "https://thetrustedprop.com/apex-trader-funding/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/apextraderfundingcom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/apextraderfundingcom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9632,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/apextraderfundingcom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/apextraderfundingcom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9508,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/apex-trader-funding/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/apex-trader-funding",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9557,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "Apex Trader Funding prop firm rules",
+        "Apex Trader Funding prop firm pricing",
+        "Apex Trader Funding prop firm payout",
+        "site:apextraderfunding.com Apex Trader Funding rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "earn2tradecom",
+      "brand_name": "Earn2Trade",
+      "website_root": "https://www.earn2trade.com",
+      "firm_ok": true,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.earn2trade.com/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 32955,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/earn2tradecom/",
+        "https://thetrustedprop.com/earn2tradecom-challenge-rules/",
+        "https://thetrustedprop.com/earn2trade/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/earn2tradecom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/earn2tradecom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9531,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/earn2tradecom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/earn2tradecom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9496,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/earn2trade/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/earn2trade",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9578,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "Earn2Trade prop firm rules",
+        "Earn2Trade prop firm pricing",
+        "Earn2Trade prop firm payout",
+        "site:www.earn2trade.com Earn2Trade rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "tradedaycom",
+      "brand_name": "TradeDay",
+      "website_root": "https://tradeday.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 200,
+        "final_url": "https://www.tradeday.com/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 93824,
+        "used_js": false,
+        "captcha_detected": true,
+        "captcha_kind": "cloudflare"
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/tradedaycom/",
+        "https://thetrustedprop.com/tradedaycom-challenge-rules/",
+        "https://thetrustedprop.com/tradeday/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/tradedaycom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/tradedaycom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9624,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/tradedaycom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/tradedaycom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9705,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/tradeday/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/tradeday",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9562,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "TradeDay prop firm rules",
+        "TradeDay prop firm pricing",
+        "TradeDay prop firm payout",
+        "site:tradeday.com TradeDay rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "myfundedfuturescom",
+      "brand_name": "My Funded Futures",
+      "website_root": "https://myfundedfutures.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 200,
+        "final_url": "https://myfundedfutures.com/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 338933,
+        "used_js": false,
+        "captcha_detected": true,
+        "captcha_kind": "cloudflare"
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/myfundedfuturescom/",
+        "https://thetrustedprop.com/myfundedfuturescom-challenge-rules/",
+        "https://thetrustedprop.com/my-funded-futures/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/myfundedfuturescom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/myfundedfuturescom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9585,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/myfundedfuturescom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/myfundedfuturescom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9559,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/my-funded-futures/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/my-funded-futures",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9556,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "My Funded Futures prop firm rules",
+        "My Funded Futures prop firm pricing",
+        "My Funded Futures prop firm payout",
+        "site:myfundedfutures.com My Funded Futures rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "fundedfuturesnetworkcom",
+      "brand_name": "Funded Futures Network",
+      "website_root": "https://fundedfuturesnetwork.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": null,
+        "final_url": "https://fundedfuturesnetwork.com",
+        "content_type": "",
+        "bytes": 0,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/fundedfuturesnetworkcom/",
+        "https://thetrustedprop.com/fundedfuturesnetworkcom-challenge-rules/",
+        "https://thetrustedprop.com/funded-futures-network/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/fundedfuturesnetworkcom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/fundedfuturesnetworkcom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9505,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/fundedfuturesnetworkcom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/fundedfuturesnetworkcom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9544,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/funded-futures-network/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/funded-futures-network",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9563,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "Funded Futures Network prop firm rules",
+        "Funded Futures Network prop firm pricing",
+        "Funded Futures Network prop firm payout",
+        "site:fundedfuturesnetwork.com Funded Futures Network rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "takeprofittradercom",
+      "brand_name": "Take Profit Trader",
+      "website_root": "https://takeprofittrader.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 200,
+        "final_url": "https://takeprofittrader.com/",
+        "content_type": "text/html;charset=UTF-8",
+        "bytes": 309962,
+        "used_js": false,
+        "captcha_detected": true,
+        "captcha_kind": "recaptcha"
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/takeprofittradercom/",
+        "https://thetrustedprop.com/takeprofittradercom-challenge-rules/",
+        "https://thetrustedprop.com/take-profit-trader/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/takeprofittradercom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/takeprofittradercom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9770,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/takeprofittradercom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/takeprofittradercom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9547,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/take-profit-trader/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/take-profit-trader",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9508,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "Take Profit Trader prop firm rules",
+        "Take Profit Trader prop firm pricing",
+        "Take Profit Trader prop firm payout",
+        "site:takeprofittrader.com Take Profit Trader rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "thefundedtraderprogramcom",
+      "brand_name": "The Funded Trader",
+      "website_root": "https://thefundedtraderprogram.com",
+      "firm_ok": true,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.thefundedtraderprogram.com/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 48683,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/thefundedtraderprogramcom/",
+        "https://thetrustedprop.com/thefundedtraderprogramcom-challenge-rules/",
+        "https://thetrustedprop.com/the-funded-trader/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/thefundedtraderprogramcom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/thefundedtraderprogramcom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9600,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/thefundedtraderprogramcom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/thefundedtraderprogramcom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9587,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/the-funded-trader/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/the-funded-trader",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9568,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "The Funded Trader prop firm rules",
+        "The Funded Trader prop firm pricing",
+        "The Funded Trader prop firm payout",
+        "site:thefundedtraderprogram.com The Funded Trader rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "ftmocom",
+      "brand_name": "FTMO",
+      "website_root": "https://ftmo.com",
+      "firm_ok": true,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://ftmo.com/en/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 58716,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/ftmocom/",
+        "https://thetrustedprop.com/ftmocom-challenge-rules/",
+        "https://thetrustedprop.com/ftmo/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/ftmocom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/ftmocom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9600,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/ftmocom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/ftmocom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9599,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/ftmo/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/ftmo",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9555,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "FTMO prop firm rules",
+        "FTMO prop firm pricing",
+        "FTMO prop firm payout",
+        "site:ftmo.com FTMO rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "fundedtradingpluscom",
+      "brand_name": "Funded Trading Plus",
+      "website_root": "https://fundedtradingplus.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 403,
+        "final_url": "https://www.fundedtradingplus.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 2248,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/fundedtradingpluscom/",
+        "https://thetrustedprop.com/fundedtradingpluscom-challenge-rules/",
+        "https://thetrustedprop.com/funded-trading-plus/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/fundedtradingpluscom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/fundedtradingpluscom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9514,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/fundedtradingpluscom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/fundedtradingpluscom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9550,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/funded-trading-plus/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/funded-trading-plus",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9502,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "Funded Trading Plus prop firm rules",
+        "Funded Trading Plus prop firm pricing",
+        "Funded Trading Plus prop firm payout",
+        "site:fundedtradingplus.com Funded Trading Plus rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "the5erscom",
+      "brand_name": "The5ers",
+      "website_root": "https://the5ers.com",
+      "firm_ok": true,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://the5ers.com/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 240462,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/the5erscom/",
+        "https://thetrustedprop.com/the5erscom-challenge-rules/",
+        "https://thetrustedprop.com/the5ers/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/the5erscom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/the5erscom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9526,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/the5erscom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/the5erscom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9512,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/the5ers/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/the5ers",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9583,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "The5ers prop firm rules",
+        "The5ers prop firm pricing",
+        "The5ers prop firm payout",
+        "site:the5ers.com The5ers rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "citytradersimperiumcom",
+      "brand_name": "City Traders Imperium",
+      "website_root": "https://citytradersimperium.com",
+      "firm_ok": true,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://citytradersimperium.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 1731920,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/citytradersimperiumcom/",
+        "https://thetrustedprop.com/citytradersimperiumcom-challenge-rules/",
+        "https://thetrustedprop.com/city-traders-imperium/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/citytradersimperiumcom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/citytradersimperiumcom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9706,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/citytradersimperiumcom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/citytradersimperiumcom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9615,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/city-traders-imperium/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/city-traders-imperium",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9570,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "City Traders Imperium prop firm rules",
+        "City Traders Imperium prop firm pricing",
+        "City Traders Imperium prop firm payout",
+        "site:citytradersimperium.com City Traders Imperium rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "e8marketscom",
+      "brand_name": "E8 Markets",
+      "website_root": "https://e8markets.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 403,
+        "final_url": "https://e8markets.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 12910,
+        "used_js": false,
+        "captcha_detected": true,
+        "captcha_kind": "cloudflare"
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/e8marketscom/",
+        "https://thetrustedprop.com/e8marketscom-challenge-rules/",
+        "https://thetrustedprop.com/e8-markets/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/e8marketscom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/e8marketscom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9468,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/e8marketscom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/e8marketscom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9607,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/e8-markets/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/e8-markets",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9671,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "E8 Markets prop firm rules",
+        "E8 Markets prop firm pricing",
+        "E8 Markets prop firm payout",
+        "site:e8markets.com E8 Markets rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "fidelcrestcom",
+      "brand_name": "Fidelcrest",
+      "website_root": "https://fidelcrest.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 200,
+        "final_url": "https://fidelcrest.com/",
+        "content_type": "text/html",
+        "bytes": 114,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/fidelcrestcom/",
+        "https://thetrustedprop.com/fidelcrestcom-challenge-rules/",
+        "https://thetrustedprop.com/fidelcrest/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/fidelcrestcom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/fidelcrestcom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9491,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/fidelcrestcom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/fidelcrestcom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9609,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/fidelcrest/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/fidelcrest",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9563,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "Fidelcrest prop firm rules",
+        "Fidelcrest prop firm pricing",
+        "Fidelcrest prop firm payout",
+        "site:fidelcrest.com Fidelcrest rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "trueforexfundscom",
+      "brand_name": "True Forex Funds",
+      "website_root": "https://trueforexfunds.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 200,
+        "final_url": "https://trueforexfunds.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 18872,
+        "used_js": false,
+        "captcha_detected": true,
+        "captcha_kind": "recaptcha"
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/trueforexfundscom/",
+        "https://thetrustedprop.com/trueforexfundscom-challenge-rules/",
+        "https://thetrustedprop.com/true-forex-funds/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/trueforexfundscom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/trueforexfundscom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9569,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/trueforexfundscom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/trueforexfundscom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9771,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/true-forex-funds/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/true-forex-funds",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9540,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "True Forex Funds prop firm rules",
+        "True Forex Funds prop firm pricing",
+        "True Forex Funds prop firm payout",
+        "site:trueforexfunds.com True Forex Funds rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "myforexfundscom",
+      "brand_name": "My Forex Funds",
+      "website_root": "https://myforexfunds.com",
+      "firm_ok": true,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://myforexfunds.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 24766,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/myforexfundscom/",
+        "https://thetrustedprop.com/myforexfundscom-challenge-rules/",
+        "https://thetrustedprop.com/my-forex-funds/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/myforexfundscom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/myforexfundscom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9534,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/myforexfundscom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/myforexfundscom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9611,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/my-forex-funds/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/my-forex-funds",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9522,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "My Forex Funds prop firm rules",
+        "My Forex Funds prop firm pricing",
+        "My Forex Funds prop firm payout",
+        "site:myforexfunds.com My Forex Funds rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "fundednextcom",
+      "brand_name": "FundedNext",
+      "website_root": "https://fundednext.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 200,
+        "final_url": "https://fundednext.com/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 367960,
+        "used_js": false,
+        "captcha_detected": true,
+        "captcha_kind": "cloudflare"
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/fundednextcom/",
+        "https://thetrustedprop.com/fundednextcom-challenge-rules/",
+        "https://thetrustedprop.com/fundednext/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/fundednextcom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/fundednextcom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9696,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/fundednextcom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/fundednextcom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9617,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/fundednext/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/fundednext",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9636,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "FundedNext prop firm rules",
+        "FundedNext prop firm pricing",
+        "FundedNext prop firm payout",
+        "site:fundednext.com FundedNext rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "luxtradingfirmcom",
+      "brand_name": "Lux Trading Firm",
+      "website_root": "https://luxtradingfirm.com",
+      "firm_ok": true,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://luxtradingfirm.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 51228,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/luxtradingfirmcom/",
+        "https://thetrustedprop.com/luxtradingfirmcom-challenge-rules/",
+        "https://thetrustedprop.com/lux-trading-firm/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/luxtradingfirmcom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/luxtradingfirmcom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9645,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/luxtradingfirmcom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/luxtradingfirmcom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9810,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/lux-trading-firm/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/lux-trading-firm",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9561,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "Lux Trading Firm prop firm rules",
+        "Lux Trading Firm prop firm pricing",
+        "Lux Trading Firm prop firm payout",
+        "site:luxtradingfirm.com Lux Trading Firm rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "surgetradercom",
+      "brand_name": "SurgeTrader",
+      "website_root": "https://surgetrader.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 403,
+        "final_url": "https://surgetrader.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 2225,
+        "used_js": false,
+        "captcha_detected": false,
+        "captcha_kind": null
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/surgetradercom/",
+        "https://thetrustedprop.com/surgetradercom-challenge-rules/",
+        "https://thetrustedprop.com/surgetrader/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/surgetradercom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/surgetradercom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9655,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/surgetradercom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/surgetradercom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9662,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/surgetrader/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/surgetrader",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9670,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "SurgeTrader prop firm rules",
+        "SurgeTrader prop firm pricing",
+        "SurgeTrader prop firm payout",
+        "site:surgetrader.com SurgeTrader rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    },
+    {
+      "firm_id": "blueguardiancom",
+      "brand_name": "Blue Guardian",
+      "website_root": "https://blueguardian.com",
+      "firm_ok": false,
+      "aggregator_ok": false,
+      "bing_ok": false,
+      "firm_probe": {
+        "ok": false,
+        "status": 200,
+        "final_url": "https://www.blueguardian.com/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 532434,
+        "used_js": false,
+        "captcha_detected": true,
+        "captcha_kind": "cloudflare"
+      },
+      "aggregator_urls": [
+        "https://thetrustedprop.com/blueguardiancom/",
+        "https://thetrustedprop.com/blueguardiancom-challenge-rules/",
+        "https://thetrustedprop.com/blue-guardian/"
+      ],
+      "aggregator_probes": [
+        {
+          "url": "https://thetrustedprop.com/blueguardiancom/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/blueguardiancom",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9699,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/blueguardiancom-challenge-rules/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/blueguardiancom-challenge-rules",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9455,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        },
+        {
+          "url": "https://thetrustedprop.com/blue-guardian/",
+          "probe": {
+            "ok": false,
+            "status": 404,
+            "final_url": "https://thetrustedprop.com/blue-guardian",
+            "content_type": "text/html; charset=utf-8",
+            "bytes": 9931,
+            "used_js": false,
+            "captcha_detected": false,
+            "captcha_kind": null
+          }
+        }
+      ],
+      "bing_queries": [
+        "Blue Guardian prop firm rules",
+        "Blue Guardian prop firm pricing",
+        "Blue Guardian prop firm payout",
+        "site:blueguardian.com Blue Guardian rules"
+      ],
+      "bing_urls": [],
+      "bing_probes": []
+    }
+  ]
+}

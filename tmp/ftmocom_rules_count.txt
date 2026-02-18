@@ -1,0 +1,1 @@
+ql -At postgresql://gpti:superpassword@localhost:5434/gpti -c select\ count\(\*\)\ from\ datapoints\ where\ firm_id\=\'ftmocom\'\ and\ key\ like\ \'rules_extracted@/\\less/\\help/\\file/\\@\'\;

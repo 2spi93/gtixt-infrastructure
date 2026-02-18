@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: gpti-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: gpti
+      POSTGRES_PASSWORD: superpassword
+      POSTGRES_DB: gpti
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
