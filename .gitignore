@@ -140,6 +140,70 @@ archive_*/
 *_OLD/
 
 # ============================================
+# 13. AUTO-GENERATED DOCUMENTATION & SCRIPTS
+# ============================================
+# Generated markdown files (documentation)
+*_20260*.md
+ACTIONS_*.md
+ACTION_*.md
+ADMIN_*.md
+AGENT_*.md
+AI_ASSISTANT_*.md
+AJOUT_*.md
+ANALYSE_*.md
+ARCHITECTURE_*.md
+ASIC_*.md
+AUDIT_*.md
+AUTOMATISATION_*.md
+AUSTRALIAN_*.md
+
+# Generated python scripts (data processing)
+add_australian_firms.py
+agents_monitoring.py
+analyze_*.py
+apply_*.py
+automated_*.py
+backfill_*.py
+check_*.py
+cleanup_*.py
+discover_*.py
+enrich_*.py
+execute_*.py
+extract_*.py
+fetch_*.py
+generate_*.py
+health_*.py
+import_*.py
+load_*.py
+manage_*.py
+migrate_*.py
+monitor_*.py
+preprocess_*.py
+process_*.py
+reset_*.py
+run_*.py
+score_*.py
+seed_*.py
+setup_*.py
+sync_*.py
+test_*.py
+train_*.py
+transform_*.py
+update_*.py
+validate_*.py
+verify_*.py
+
+# Generated shell scripts
+*.sh
+!deploy.sh
+!fast-deploy.sh
+!scripts/*.sh
+
+# Old/deprecated configuration files
+.gitignore-*
+.gitignore.old
+
+# ============================================
 # EXCEPTIONS (always commit these)
 # ============================================
 # Config examples ARE tracked (for documentation)
