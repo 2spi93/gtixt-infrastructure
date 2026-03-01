@@ -221,3 +221,17 @@ verify_*.py
 !ARCHITECTURE_OPTIMIZATIONS.md
 docs/deployment/PRODUCTION_CREDENTIALS_VERIFIED.md
 *CREDENTIALS*.md
+# Archives obsolètes
+docs/archive/obsolete-2026/
+*.backup
+*.old
+*_OLD.md
+*_BACKUP.md
+
+# Logs temporaires
+*.log
+.next-start.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db

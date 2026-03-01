@@ -1,10 +1,25 @@
-# GPTI Documentation Entry Point
+# 🚀 GTIXT - Démarrage Rapide
 
-Start with the main index:
-- docs/README.md
+**Documentation Consolidée:** Voir **[README.md](README.md)** pour l'index maître complet
 
-Application-specific docs:
-- gpti-site/docs/
-- gpti-data-bot/docs/
+---
 
-Audit snapshots from 2026-02-05 were moved under docs/ (see docs/ERRATA.md for known inconsistencies).
+## État Actuel (Mars 2026)
+
+✅ **Site Client:** 40+ pages publiques opérationnelles  
+✅ **Admin System:** 25+ pages protégées actives  
+✅ **Production:** Déployé sur https://gtixt.com  
+
+## Accès Rapide
+
+- **Site Public:** https://gtixt.com
+- **Console Admin:** https://admin.gtixt.com
+- **Documentation:** [README.md](README.md)
+
+## Documentation Archivée
+
+185 fichiers obsolètes → `docs/archive/obsolete-2026/`
+
+---
+
+**📋 Pour tout le reste, consultez [README.md](README.md)**
