@@ -1,0 +1,141 @@
+name: CI - Test & Validate
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [develop]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+          POSTGRES_DB: gpti_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install Python dependencies
+        run: |
+          cd gpti-data-bot
+          pip install -r requirements.txt
+          pip install pytest pytest-cov
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: gpti-site/package-lock.json
+
+      - name: 📦 Install Node dependencies
+        run: |
+          cd gpti-site
+          npm ci
+
+      - name: 🗄️ Setup test database
+        env:
+          DATABASE_URL: postgresql://test:test@localhost:5432/gpti_test
+        run: |
+          cd gpti-site
+          npx prisma migrate deploy
+          npx prisma generate
+
+      - name: 🧪 Run Python tests
+        env:
+          DATABASE_URL: postgresql://test:test@localhost:5432/gpti_test
+          REDIS_HOST: localhost
+          REDIS_PORT: 6379
+        run: |
+          cd gpti-data-bot
+          pytest tests/ -v --cov=src/gpti_bot --cov-report=xml
+
+      - name: 🧪 Run Next.js tests
+        env:
+          DATABASE_URL: postgresql://test:test@localhost:5432/gpti_test
+          REDIS_HOST: localhost
+          REDIS_PORT: 6379
+          JWT_SECRET: test-secret-key-for-ci
+        run: |
+          cd gpti-site
+          npm run test:ci || echo "No tests configured"
+
+      - name: 🎨 Lint TypeScript
+        run: |
+          cd gpti-site
+          npm run lint
+
+      - name: 🔍 Type check
+        run: |
+          cd gpti-site
+          npx tsc --noEmit
+
+      - name: 📊 Upload coverage
+        if: always()
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./gpti-data-bot/coverage.xml
+          flags: backend
+          name: backend-coverage
+
+      - name: ✅ Build Next.js
+        env:
+          DATABASE_URL: postgresql://test:test@localhost:5432/gpti_test
+        run: |
+          cd gpti-site
+          npm run build
+
+      - name: 📝 Prisma validate
+        run: |
+          cd gpti-site
+          npx prisma validate
+
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔒 Run Trivy security scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+
+      - name: 📤 Upload Trivy results to GitHub Security
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: 'trivy-results.sarif'

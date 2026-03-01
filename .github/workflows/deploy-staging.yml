@@ -1,0 +1,106 @@
+name: CD - Deploy to Staging
+
+on:
+  push:
+    branches: [develop]
+  workflow_dispatch:
+
+jobs:
+  deploy-staging:
+    runs-on: ubuntu-latest
+    environment: staging
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔐 Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.STAGING_SSH_KEY }}
+          SSH_HOST: ${{ secrets.STAGING_HOST }}
+          SSH_USER: ${{ secrets.STAGING_USER }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/staging_key
+          chmod 600 ~/.ssh/staging_key
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+
+      - name: 🚀 Deploy to staging server
+        env:
+          SSH_HOST: ${{ secrets.STAGING_HOST }}
+          SSH_USER: ${{ secrets.STAGING_USER }}
+        run: |
+          ssh -i ~/.ssh/staging_key "$SSH_USER@$SSH_HOST" << 'ENDSSH'
+            set -e
+            
+            echo "📂 Navigating to project directory..."
+            cd /opt/gpti
+            
+            echo "📥 Pulling latest code..."
+            git fetch origin
+            git checkout develop
+            git pull origin develop
+            
+            echo "📦 Installing Python dependencies..."
+            cd gpti-data-bot
+            pip install -r requirements.txt --quiet
+            
+            echo "📦 Installing Node dependencies..."
+            cd ../gpti-site
+            npm ci --quiet
+            
+            echo "🗄️ Running database migrations..."
+            npx prisma migrate deploy
+            npx prisma generate
+            
+            echo "🏗️ Building Next.js..."
+            npm run build
+            
+            echo "🔄 Restarting services..."
+            pm2 restart gpti-site || pm2 start npm --name "gpti-site" -- start
+            
+            echo "✅ Deployment complete!"
+          ENDSSH
+
+      - name: 🧪 Health check
+        env:
+          STAGING_URL: ${{ secrets.STAGING_URL || 'https://staging.gtixt.com' }}
+        run: |
+          sleep 10
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$STAGING_URL/api/health")
+          
+          if [ "$HTTP_STATUS" -eq 200 ]; then
+            echo "✅ Health check passed (HTTP $HTTP_STATUS)"
+          else
+            echo "❌ Health check failed (HTTP $HTTP_STATUS)"
+            exit 1
+          fi
+
+      - name: 📢 Notify Slack
+        if: always()
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          if [ "${{ job.status }}" == "success" ]; then
+            COLOR="good"
+            MESSAGE="✅ Staging deployment successful"
+          else
+            COLOR="danger"
+            MESSAGE="❌ Staging deployment failed"
+          fi
+          
+          curl -X POST "$SLACK_WEBHOOK" \
+            -H 'Content-Type: application/json' \
+            -d "{
+              \"attachments\": [{
+                \"color\": \"$COLOR\",
+                \"title\": \"GPTI Staging Deployment\",
+                \"text\": \"$MESSAGE\",
+                \"fields\": [
+                  {\"title\": \"Branch\", \"value\": \"develop\", \"short\": true},
+                  {\"title\": \"Commit\", \"value\": \"${{ github.sha }}\", \"short\": true}
+                ],
+                \"footer\": \"GitHub Actions\",
+                \"ts\": $(date +%s)
+              }]
+            }"

@@ -41,7 +41,7 @@ else
     echo -e "${RED}❌ MinIO URLs missing${NC}"
 fi
 
-if grep -q "hooks.slack.com/services/T08BTRRNC4V" gpti-site/.env.production.local; then
+if grep -Eq "^SLACK_WEBHOOK_URL=https://hooks.slack.com/services/" gpti-site/.env.production.local; then
     echo -e "${GREEN}✅ Slack webhook configured${NC}"
 else
     echo -e "${YELLOW}⚠️  Slack webhook not configured (optional for frontend)${NC}"
@@ -60,13 +60,13 @@ else
 fi
 
 # Verify production env has values
-if grep -q "a16332001@smtp-brevo.com" gpti-data-bot/.env.production.local; then
+if grep -Eq "^SMTP_USER=[^[:space:]]+" gpti-data-bot/.env.production.local; then
     echo -e "${GREEN}✅ SMTP credentials configured${NC}"
 else
     echo -e "${YELLOW}⚠️  SMTP credentials missing (email won't work)${NC}"
 fi
 
-if grep -q "U1P2zcMXE8FQHahv" gpti-data-bot/.env.production.local; then
+if grep -Eq "^BREVO_API_KEY=[^[:space:]]+" gpti-data-bot/.env.production.local; then
     echo -e "${GREEN}✅ Brevo API key configured${NC}"
 else
     echo -e "${YELLOW}⚠️  Brevo API key missing${NC}"
@@ -85,13 +85,13 @@ else
 fi
 
 # Verify production env has values
-if grep -q "2e8c1b61927c490738c23e5e7976f69790a1b2bd4c75b1c8" gpti-data-bot/infra/.env.production.local; then
+if grep -Eq "^POSTGRES_PASSWORD=[^[:space:]]+" gpti-data-bot/infra/.env.production.local; then
     echo -e "${GREEN}✅ Postgres credentials configured${NC}"
 else
     echo -e "${YELLOW}⚠️  Postgres credentials missing${NC}"
 fi
 
-if grep -q "05eec508d5f6235c" gpti-data-bot/infra/.env.production.local; then
+if grep -Eq "^MINIO_ROOT_PASSWORD=[^[:space:]]+" gpti-data-bot/infra/.env.production.local; then
     echo -e "${GREEN}✅ MinIO root credentials configured${NC}"
 else
     echo -e "${YELLOW}⚠️  MinIO root credentials missing${NC}"

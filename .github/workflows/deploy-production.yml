@@ -1,0 +1,173 @@
+name: CD - Deploy to Production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy-production:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://gtixt.com
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔐 Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PRODUCTION_SSH_KEY }}
+          SSH_HOST: ${{ secrets.PRODUCTION_HOST }}
+          SSH_USER: ${{ secrets.PRODUCTION_USER }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/production_key
+          chmod 600 ~/.ssh/production_key
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+
+      - name: 💾 Backup production database
+        env:
+          SSH_HOST: ${{ secrets.PRODUCTION_HOST }}
+          SSH_USER: ${{ secrets.PRODUCTION_USER }}
+        run: |
+          ssh -i ~/.ssh/production_key "$SSH_USER@$SSH_HOST" \
+            "/opt/gpti/scripts/backup_postgresql.sh"
+
+      - name: 🚀 Deploy to production server
+        env:
+          SSH_HOST: ${{ secrets.PRODUCTION_HOST }}
+          SSH_USER: ${{ secrets.PRODUCTION_USER }}
+        run: |
+          ssh -i ~/.ssh/production_key "$SSH_USER@$SSH_HOST" << 'ENDSSH'
+            set -e
+            
+            echo "📂 Navigating to project directory..."
+            cd /opt/gpti
+            
+            echo "📥 Pulling latest code..."
+            git fetch origin
+            git checkout main
+            git pull origin main
+            
+            echo "📦 Installing Python dependencies..."
+            cd gpti-data-bot
+            pip install -r requirements.txt --quiet
+            
+            echo "📦 Installing Node dependencies..."
+            cd ../gpti-site
+            npm ci --quiet
+            
+            echo "🗄️ Running database migrations..."
+            npx prisma migrate deploy
+            npx prisma generate
+            
+            echo "🏗️ Building Next.js..."
+            npm run build
+            
+            echo "🔄 Restarting services with zero-downtime..."
+            pm2 reload gpti-site --update-env
+            
+            echo "✅ Deployment complete!"
+          ENDSSH
+
+      - name: 🧪 Health check & smoke tests
+        env:
+          PRODUCTION_URL: https://gtixt.com
+        run: |
+          sleep 15
+          
+          # Test main site
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$PRODUCTION_URL")
+          if [ "$HTTP_STATUS" -ne 200 ]; then
+            echo "❌ Main site health check failed (HTTP $HTTP_STATUS)"
+            exit 1
+          fi
+          
+          # Test API health
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$PRODUCTION_URL/api/health")
+          if [ "$HTTP_STATUS" -ne 200 ]; then
+            echo "❌ API health check failed (HTTP $HTTP_STATUS)"
+            exit 1
+          fi
+          
+          # Test snapshot endpoint
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$PRODUCTION_URL/api/snapshot/latest")
+          if [ "$HTTP_STATUS" -ne 200 ]; then
+            echo "⚠️ Snapshot endpoint check failed (HTTP $HTTP_STATUS)"
+          fi
+          
+          echo "✅ All health checks passed"
+
+      - name: 📢 Notify Slack
+        if: always()
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+          PAGERDUTY_KEY: ${{ secrets.PAGERDUTY_INTEGRATION_KEY }}
+        run: |
+          if [ "${{ job.status }}" == "success" ]; then
+            COLOR="good"
+            MESSAGE="✅ Production deployment successful"
+            SEVERITY="info"
+          else
+            COLOR="danger"
+            MESSAGE="🚨 Production deployment FAILED - immediate action required"
+            SEVERITY="critical"
+          fi
+          
+          # Slack notification
+          curl -X POST "$SLACK_WEBHOOK" \
+            -H 'Content-Type: application/json' \
+            -d "{
+              \"attachments\": [{
+                \"color\": \"$COLOR\",
+                \"title\": \"🚀 GPTI Production Deployment\",
+                \"text\": \"$MESSAGE\",
+                \"fields\": [
+                  {\"title\": \"Branch\", \"value\": \"main\", \"short\": true},
+                  {\"title\": \"Commit\", \"value\": \"${{ github.sha }}\", \"short\": true},
+                  {\"title\": \"Author\", \"value\": \"${{ github.actor }}\", \"short\": true}
+                ],
+                \"footer\": \"GitHub Actions\",
+                \"ts\": $(date +%s)
+              }]
+            }"
+          
+          # PagerDuty alert on failure
+          if [ "${{ job.status }}" != "success" ] && [ -n "$PAGERDUTY_KEY" ]; then
+            curl -X POST https://events.pagerduty.com/v2/enqueue \
+              -H 'Content-Type: application/json' \
+              -d "{
+                \"routing_key\": \"$PAGERDUTY_KEY\",
+                \"event_action\": \"trigger\",
+                \"payload\": {
+                  \"summary\": \"Production deployment failed\",
+                  \"severity\": \"$SEVERITY\",
+                  \"source\": \"GitHub Actions\",
+                  \"custom_details\": {
+                    \"commit\": \"${{ github.sha }}\",
+                    \"author\": \"${{ github.actor }}\",
+                    \"workflow\": \"${{ github.workflow }}\"
+                  }
+                }
+              }"
+          fi
+
+      - name: 📝 Create GitHub Release
+        if: success()
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Production Deploy ${{ github.sha }}
+          body: |
+            Automated production deployment
+            
+            Commit: ${{ github.sha }}
+            Author: ${{ github.actor }}
+            
+            Changes deployed to: https://gtixt.com
+          draft: false
+          prerelease: false
